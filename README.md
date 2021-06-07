@@ -1,3 +1,5 @@
+installation of npm 
+```
 $sudo apt update -y
 $mkdir todo
 $cd todo
@@ -6,8 +8,11 @@ $sudo apt install npm
 $npm init -y
 $npm install
 $npm start
-
-#vi /etc/systemd/system
+```
+creating service file
+```
+#cd /etc/systemd/system
+#vi todo.service
 
 [Unit]
 Description=todo Service
@@ -19,10 +24,14 @@ ExecStart=/bin/node /home/todo/final/todo/server.js
 SyslogIdentifier=todo
 [Install]
 WantedBy=multi-user.target
+```
+start service 
 
+```
 # systemctl daemon-reload
 # systemctl restart todo
 # systemctl status todo
+```
 
 
 
