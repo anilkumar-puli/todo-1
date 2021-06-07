@@ -29,7 +29,7 @@ start service
 
 ```
 # systemctl daemon-reload
-# systemctl restart todo
+# systemctl start todo
 # systemctl status todo
 ```
 
