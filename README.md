@@ -26,7 +26,6 @@ SyslogIdentifier=todo
 WantedBy=multi-user.target
 ```
 start service 
-
 ```
 # systemctl daemon-reload
 # systemctl start todo
