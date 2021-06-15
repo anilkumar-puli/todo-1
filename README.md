@@ -18,7 +18,7 @@ creating service file
 Description=todo Service
 [Service]
 User=todo
-Environment=REDIS_HOST=172.31.48.48
+Environment=REDIS_HOST=redis_ip
 Environment=AUTH_API_PORT=8080
 ExecStart=/bin/node /home/todo/final/todo/server.js
 SyslogIdentifier=todo
